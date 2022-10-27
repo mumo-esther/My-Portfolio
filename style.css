@@ -9,7 +9,10 @@
   background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 250, 250);
+  display: block;
+  align-items: center;
+  justify-items: center;
 }
 
 nav {
@@ -30,6 +33,7 @@ nav {
   align-items: center;
   text-align: center;
   color: #28352f;
+  float: left;
 }
 
 .nav-list {
@@ -71,16 +75,16 @@ nav ul li a:hover {
 h1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 1300px;
-  font-size: 35px;
+  font-weight: bolder;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 0.37px;
-  color: #172b4d;
-  margin-bottom: -25px;
+  color: #172b4c;
+  margin-bottom: -15px;
 }
 
 .content {
-  margin-top: -450px;
+  margin-top: -500px;
 }
 
 h2 {
@@ -100,12 +104,12 @@ h2 {
 .supporting-text {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 250;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.6px;
-  color: #172b4d;
+  color: #172b4a;
   max-width: 500px;
   margin: auto;
 }
@@ -130,7 +134,7 @@ h2 {
   height: 40px;
   left: calc(50% - 40px / 2 + 0.5px);
   bottom: 4px;
-  background: #ffff;
+  background-color: rgb(255, 250, 250);
 }
 
 .socialmedia:hover {
@@ -141,7 +145,7 @@ h2 {
   display: block;
   font-size: 25px;
   font-weight: bold;
-  color: black;
+  color: #172b4a;
   float: right;
   line-height: 70px;
   margin-right: 20px;
@@ -156,15 +160,23 @@ h2 {
 
   .hambuger-btn {
     position: relative;
-    height: 100px;
+    height: 50px;
     top: auto;
     background-color: none;
     float: right;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 100px;
   }
 
   .nav-list {
     display: none;
   }
+}
+
+.herocontent {
+  display: flex;
+  align-items: flex-start;
 }
 
 @media (max-width: 480px) {
